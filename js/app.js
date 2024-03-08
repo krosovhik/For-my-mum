@@ -63,7 +63,10 @@ var typed = new Typed("#text", {
   },
 });
 
-var backgroundMusic = new Audio("your-audio-file.mp3");
-backgroundMusic.autoplay = true;
-backgroundMusic.loop = true;
-backgroundMusic.play();
+document.body.addEventListener("click", function () {
+  var backgroundMusic = new Audio(
+    "YAKTAK - Гуцулка Ксеня - primemusic.zone.mp3"
+  );
+  backgroundMusic.loop = true;
+  backgroundMusic.play();
+});
